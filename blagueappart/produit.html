@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Présentation du Tableau</title>
     <link rel="stylesheet" href="produit.css">
-    ,<script src="produit.js" defer></script>
+    <script src="produit.js" defer></script>
 </head>
 <body>
     <header>
@@ -16,6 +16,7 @@
     <main>
 
         <section class="annonces">
+            
             <div class="annonce">
                 <div class="image-tableau">
                     <img src="/media/chirac.PNG" alt="Tableau">
@@ -28,7 +29,25 @@
                         <span class="prix">500€</span> 
                         <br><span class="taille">80cm x 100cm</span>
                     </div>
-                    <button class="ajouter-panier">Ajouter au panier</button>
+                    <button class="ajouter-panier" onclick="addToCart('Chirac', 500, '/media/chirac.PNG')">Ajouter au panier</button>
+
+                    
+                </div>
+            </div>
+            
+            <div class="annonce">
+                <div class="image-tableau">
+                    <img src="/media/colone.PNG" alt="Tableau">
+                </div>
+                <div class="details">
+                    <h1 class="titre">Colonne</h1>
+                    <p>ref #12345</p>
+                    <p class="description">Superbe tableau abstrait moderne, parfait pour ajouter une touche artistique à votre intérieur. Peint à la main par un artiste talentueux. Dimensions : 70cm x 90cm. Livraison gratuite.</p>
+                    <div class="prix-taille">
+                        <span class="prix">390€</span> 
+                        <br><span class="taille">70cm x 90cm</span>
+                    </div>
+                    <button class="ajouter-panier" onclick="addToCart('Colonne', 390)">Ajouter au panier</button>
                 </div>
             </div>
             
@@ -38,67 +57,35 @@
                 </div>
                 <div class="details">
                     <h1 class="titre">Diamant</h1>
-                    <p>ref #24675</p>
-                    <p class="description">Superbe tableau abstrait moderne, parfait pour ajouter une touche artistique à votre intérieur. Peint à la main par un artiste talentueux. Dimensions : 80cm x 100cm. Livraison gratuite.</p>
+                    <p>ref #67890</p>
+                    <p class="description">Superbe tableau abstrait moderne, parfait pour ajouter une touche artistique à votre intérieur. Peint à la main par un artiste talentueux. Dimensions : 60cm x 80cm. Livraison gratuite.</p>
                     <div class="prix-taille">
-                        <span class="prix">489€</span> 
-                        <br><span class="taille">80cm x 100cm</span>
+                        
+                        <span class="prix">600€</span> 
+                        <br><span class="taille">60cm x 80cm</span>
                     </div>
-                    <button class="ajouter-panier">Ajouter au panier</button>
+                    <button class="ajouter-panier" onclick="addToCart('Diamant', 600)">Ajouter au panier</button>
                 </div>
             </div>
-            
-            <div class="annonce">
-                <div class="image-tableau">
-                    <img src="/media/escalier.JPG" alt="Tableau">
-                </div>
-                <div class="details">
-                    <h1 class="titre">Escalier</h1>
-                    <p>ref #2678</p>
-                    <p class="description">Superbe tableau abstrait moderne, parfait pour ajouter une touche artistique à votre intérieur. Peint à la main par un artiste talentueux. Dimensions : 80cm x 100cm. Livraison gratuite.</p>
-                    <div class="prix-taille">
-                        <span class="prix">1990€</span> 
-                        <br><span class="taille">70cm x 100cm</span>
-                    </div>
-                    <button class="ajouter-panier">Ajouter au panier</button>
-                </div>
-                
-            </div>
-            <section class="annonces">
-                <div class="annonce">
-                    <div class="image-tableau">
-                        <img src="/media/pyra.PNG" alt="Tableau">
-                    </div>
-                    <div class="details">
-                        <h1 class="titre">Pyra</h1>
-                        <p>ref #24237</p>
-                        <p class="description">Superbe tableau abstrait moderne, parfait pour ajouter une touche artistique à votre intérieur. Peint à la main par un artiste talentueux. Dimensions : 80cm x 100cm. Livraison gratuite.</p>
-                        <div class="prix-taille">
-                            <span class="prix">500€</span> 
-                            <br><span class="taille">80cm x 100cm</span>
-                        </div>
-                        <button class="ajouter-panier">Ajouter au panier</button>
-                    </div>
-                </div>
-        </section>
-        <section class="annonces">
+
             <div class="annonce">
                 <div class="image-tableau">
                     <img src="/media/fiagro.PNG" alt="Tableau">
                 </div>
                 <div class="details">
                     <h1 class="titre">figaro</h1>
-                    <p>ref #24237</p>
-                    <p class="description">Superbe tableau abstrait moderne, parfait pour ajouter une touche artistique à votre intérieur. Peint à la main par un artiste talentueux. Dimensions : 80cm x 100cm. Livraison gratuite.</p>
+                    <p>ref #67890</p>
+                    <p class="description">Superbe tableau abstrait moderne, parfait pour ajouter une touche artistique à votre intérieur. Peint à la main par un artiste talentueux. Dimensions : 60cm x 80cm. Livraison gratuite.</p>
                     <div class="prix-taille">
                         <span class="prix">500€</span> 
-                        <br><span class="taille">80cm x 100cm</span>
+                        <br><span class="taille">60cm x 80cm</span>
                     </div>
-                    <button class="ajouter-panier">Ajouter au panier</button>
+                    <button class="ajouter-panier" onclick="addToCart('figaro', 500)">Ajouter au panier</button>
                 </div>
             </div>
-    </section>
+            <!-- Ajoutez d'autres annonces ici -->
+            
+        </section>
     </main>
-
 </body>
 </html>

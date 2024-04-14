@@ -77,10 +77,8 @@ main {
 }
 
 .ajouter-panier {
-
     color: black;
     padding: 10px 20px;
-
     cursor: pointer;
     transition: background-color 0.3s;
     margin-top: 20px;
@@ -93,7 +91,6 @@ main {
 
 
 footer {
-
     padding: 20px;
     text-align: center;
 }

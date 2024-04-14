@@ -1,84 +1,65 @@
-/* Style de base */
+/* Style pour le conteneur principal */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-}
-
-nav {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* 100% de la hauteur de la vue */
+    margin: 0;
 }
 
-.bouton-retour {
-    color:white;
-    text-decoration: none;
-    padding: 5px 10px;
-    background-color: blue;
-}
-
-.bouton-retour:hover {
-    background-color: #bb0202;
-}
-
-main {
-    padding: 20px;
-}
-
-/* Style du panier */
-.panier {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+/* Style pour le conteneur du panier */
+#cartItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
 }
 
-.produit {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.image-tableau {
-    height: 200px;
-    overflow: hidden;
-}
-
-.image-tableau img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.details {
+/* Style pour chaque produit dans le panier */
+.annonce {
+    width: 250px;
+    border: 1px solid #ccc;
     padding: 10px;
 }
 
+/* Style pour l'image du tableau */
+.image-tableau img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style pour les détails du produit */
+.details {
+    margin-top: 10px;
+    text-align: center; /* Centrer le texte */
+}
+
+/* Style pour le titre du produit */
 .titre {
-    margin: 0;
+    font-size: 18px;
+    margin-bottom: 5px;
 }
 
+/* Style pour le prix du produit */
 .prix {
-    font-weight: bold;
-    margin: 0;
+    font-size: 16px;
+ 
+    color: #0070ba; /* Couleur du prix de eBay */
+    margin-bottom: 10px;
 }
 
-.taille {
-    margin: 0;
-    color: #666;
+/* Style pour le bouton de suppression */
+.details button {
+    background-color: #0070ba; /* Couleur du bouton de eBay */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+/* Style pour le bouton de suppression au survol */
+.details button:hover {
+    background-color: #00578e; /* Couleur au survol de eBay */
 }
+

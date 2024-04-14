@@ -3,7 +3,12 @@ body {
     margin: 0;
     padding: 0;
 }
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 
+}
 header {
     color: white;
     padding: 20px;
@@ -27,10 +32,6 @@ nav ul li a:hover {
    background-color: aqua;
    text-transform:lowercase;
 
-}
-
-main {
-    padding: 20px;
 }
 
 
@@ -76,14 +77,6 @@ body, html {
     width: 25%; /* Pour diviser l'espace en 4 colonnes */
     box-sizing: border-box; /* Inclure la bordure et le padding dans la largeur */
     padding: 5px; /* Ajoute de l'espace entre les images */
-}
-
-
-
-
-main {
-    display: flex;
-    justify-content: center;
 }
 
 .images {

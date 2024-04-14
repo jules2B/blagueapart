@@ -1,0 +1,55 @@
+footer {
+  padding: 20px;
+  text-align: center;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.social-links a {
+  display: inline-block;
+  height: 600px; /* Augmente la hauteur des icônes */
+  width: 600px; /* Augmente la largeur des icônes */
+  font-size: 30px; /* Ajuste la taille de la police pour agrandir les icônes */
+  margin: 0 20px 10px 0;
+  text-align: center;
+  color: #000000; /* Met toutes les icônes en noir */
+  transition: all 0.5s ease;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 45px;
+  letter-spacing: 4px;
+  padding: 200px 0 100px;
+  text-align: center;
+}
+
+.Social-media {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  display: flex;
+  background: yellow;
+  height: 45px;
+  width: 45px;
+  margin: 0 15px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: 1px solid rgba(0, 124, 196, 0);
+  transition: transform 0.5s;
+}
+
+footer{
+  padding-top: 200px;
+}
