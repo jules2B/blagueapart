@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: white;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.bouton-retour {
+    color:white;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: blue;
+}
+
+.bouton-retour:hover {
+    background-color: #bb0202;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+.galerie {
+    max-width: 80%;
+    margin: auto;
+    position: relative;
+}
+
+.fleche-gauche,
+.fleche-droite {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.fleche-gauche {
+    left: 10px; /* Ajustement pour positionner à gauche */
+}
+
+.fleche-droite {
+    right: 10px; /* Ajustement pour positionner à droite */
+}
+
+
+.galerie img {
+    width: 100%;
+    max-width: 400px; /* Ajustez la taille de l'image ici */
+    display: block;
+    margin: auto;
+}
+
+.boutons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    color: rgb(0, 0, 0);
+    cursor:rgb(0, 0, 0)ter;
+}
+
+button:hover {
+    background-color: #eb0000;
+}
+
+
+.conteneur-image {
+    position: relative;
+    display: inline-block;
+}
+

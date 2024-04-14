@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+nav ul li a:hover {
+   background-color: aqua;
+   text-transform:lowercase;
+
+}
+
+main {
+    padding: 20px;
+}
+
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+footer {
+
+    padding: 20px;
+    text-align: center;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.images img {
+    width: 25%; /* Pour diviser l'espace en 4 colonnes */
+    box-sizing: border-box; /* Inclure la bordure et le padding dans la largeur */
+    padding: 5px; /* Ajoute de l'espace entre les images */
+}
+
+
+
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px; /* ajustez selon vos besoins */
+}
+
+.images a {
+    position: relative;
+    display: block;
+    width: calc(25% - 10px); /* Pour diviser l'espace en 4 colonnes avec un espacement de 5px */
+    margin: 5px; /* Ajoute de l'espace entre les images */
+    transition: filter 0.3s, transform 0.3s;
+    overflow: hidden;
+}
+
+.images a:hover img {
+    filter: blur(3px); /* Appliquer un flou sur l'image au survol */
+    transform: scale(1.1); /* Faire grossir un peu l'image au survol */
+    z-index: 1; /* Assurez-vous que l'image survolée est au-dessus des autres */
+}
+
+.images a::after {
+    content: attr(alt); /* Afficher le texte de l'attribut alt */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Couleur du texte */
+    opacity: 0; /* Cacher le texte par défaut */
+    transition: opacity 0.3s;
+}
+
+.images a:hover::after {
+    opacity: 1; /* Afficher le texte au survol */
+}
+
+.images img {
+    width: 100%;
+    height: auto;
+    transition: filter 0.3s;
+}
+
+.panier-icon {
+    font-size: 24px;
+    color:pink;
+}

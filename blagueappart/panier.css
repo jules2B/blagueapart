@@ -1,0 +1,84 @@
+/* Style de base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.bouton-retour {
+    color:white;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: blue;
+}
+
+.bouton-retour:hover {
+    background-color: #bb0202;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Style du panier */
+.panier {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.produit {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.image-tableau {
+    height: 200px;
+    overflow: hidden;
+}
+
+.image-tableau img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.details {
+    padding: 10px;
+}
+
+.titre {
+    margin: 0;
+}
+
+.prix {
+    font-weight: bold;
+    margin: 0;
+}
+
+.taille {
+    margin: 0;
+    color: #666;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

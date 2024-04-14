@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie d'Images</title>
+    <link rel="stylesheet" href="/galerie.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="bouton-retour">Retour</a>
+        </nav>
+    </header>
+    <main>
+        <div class="galerie">
+            <img src="/media/chirac.PNG" alt="Image 1" id="image">
+            <button class="fleche-gauche" onclick="imagePrecedente()">&#8249;</button>
+            <button class="fleche-droite" onclick="imageSuivante()">&#8250;</button>
+        </div>
+        <div class="boutons">
+            <button onclick="tournerSensHoraire()">Tourner dans le sens horaire</button>
+            <button onclick="tournerSensAntiHoraire()">Tourner dans le sens anti-horaire</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 blague appart</p>
+    </footer>
+
+    <script>
+        let indexImage = 0;
+        const images = [
+            "/media/chirac.PNG",
+            "/media/diamant.PNG",
+            "/media/escalier.JPG",
+            "/media/fiagro.PNG",
+            "/media/orange.PNG",
+            "/media/plantes.PNG",
+            "/media/pyra.PNG",
+            "/media/rue.PNG"
+        ];
+
+        function imageSuivante() {
+            indexImage++;
+            if (indexImage >= images.length) {
+                indexImage = 0;
+            }
+            document.getElementById('image').src = images[indexImage];
+        }
+
+        function imagePrecedente() {
+            indexImage--;
+            if (indexImage < 0) {
+                indexImage = images.length - 1;
+            }
+            document.getElementById('image').src = images[indexImage];
+        }
+
+        let angleRotation = 0;
+
+        function tournerSensHoraire() {
+            angleRotation += 45;
+            document.getElementById('image').style.transform = `rotate(${angleRotation}deg)`;
+        }
+
+        function tournerSensAntiHoraire() {
+            angleRotation -= 45;
+            document.getElementById('image').style.transform = `rotate(${angleRotation}deg)`;
+        }
+    </script>
+</body>
+</html>
