@@ -17,8 +17,32 @@
         <h1>Panier</h1>
         <div id="cartItems"></div>
         <div id="totalPrice"></div>
-
+        <h1>Page de Paiement</h1>
+  
+        <!-- Bouton Apple Pay -->
+        <button id="applePayButton">
+          <img src="/media/Apple-Pay-Embleme.jpg" class="apple-pay-logo" alt="Apple Pay">  Apple Pay
+        </button>
+      
+        <!-- Formulaire de paiement -->
+        <form id="paymentForm">
+          <label for="cardNumber">Numéro de Carte:</label>
+          <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" required><br><br>
+          
+          <label for="expMonth">Mois d'Expiration:</label>
+          <input type="text" id="expMonth" name="expMonth" placeholder="MM" required>
+          <label for="expYear">Année d'Expiration:</label>
+          <input type="text" id="expYear" name="expYear" placeholder="YYYY" required><br><br>
+      
+          <label for="cvv">CVV:</label>
+          <input type="text" id="cvv" name="cvv" placeholder="123" required><br><br>
+      
+          <button type="submit">Payer</button>
+        </form>
+      
     </main>
-    
+    <footer>
+        <p>&copy; 2024 blague appart Tous droits réservés.</p>
+    </footer>
 </body>
 </html>

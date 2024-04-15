@@ -1,7 +1,4 @@
-footer {
-  padding: 20px;
-  text-align: center;
-}
+
 
 body, html {
   margin: 0;
@@ -43,6 +40,7 @@ a {
   height: 45px;
   width: 45px;
   margin: 0 15px;
+  margin-top: 20px;
   align-items: center;
   justify-content: center;
   text-decoration: none;
@@ -50,6 +48,8 @@ a {
   transition: transform 0.5s;
 }
 
-footer{
-  padding-top: 200px;
+footer {
+  padding: 20px;
+  text-align: center;
+  padding-top: 150px;
 }

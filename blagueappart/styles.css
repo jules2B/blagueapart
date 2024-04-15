@@ -1,8 +1,57 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: white;
+    color: #000;
 }
+
+.bouttondarkmode{
+    padding-top: 20px;
+}
+
+
+.btn-dark{
+    color:black;
+    background-color: #fff;
+    margin-left: 336px;
+    cursor: pointer;
+    
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2px;
+    background-color: #fff;
+    color: #000000;
+  }
+  
+ /* .dark-mode .container {
+    background-color: #000000;
+    color: #fff;
+    font-size: 15px;
+  }
+  .dark-mode ul li a {
+    color: white;
+  }*/
+
+.colored1 {
+    color: red; /* Changer la couleur à votre préférence */
+  }
+  .colored2 {
+    color: blue; /* Changer la couleur à votre préférence */
+  }
+  .colored3 {
+    color: green; /* Changer la couleur à votre préférence */
+  }
+  .colored4 {
+    color: orange; /* Changer la couleur à votre préférence */
+  }
+  .colored5 {
+    color: purple; /* Changer la couleur à votre préférence */
+  }
+  
 main {
     display: flex;
     justify-content: center;
@@ -14,9 +63,16 @@ header {
     padding: 20px;
     text-align: center;
 }
-
-nav ul {
-    list-style-type: none;
+.titre{
+    color: white; /* Couleur du texte */
+  text-shadow: 
+    -1px -1px 0 rgba(0, 0, 0, 0.7),
+    1px -1px 0 rgba(0, 0, 0, 0.7),
+    -1px 1px 0 rgba(0, 0, 0, 0.7),
+    1px 1px 0 rgba(0, 0, 0, 0.7); /* Contour noir */
+  font-size: 36px; /* Taille du texte */
+  letter-spacing: 2px; /* Espacement entre les lettres */
+  padding: 10px; /* Espace intérieur */
 }
 
 nav ul li {
@@ -33,8 +89,17 @@ nav ul li a:hover {
    text-transform:lowercase;
 
 }
+.panier-icon {
+  font-size: 24px;
+  color:pink;
+}
 
-
+@media screen and (max-width: 768px) {
+.panier-icon{
+  display: flex;
+  justify-content: center;
+}
+}
 h2 {
     font-size: 24px;
     margin-bottom: 20px;
@@ -45,13 +110,6 @@ footer {
     padding: 20px;
     text-align: center;
 }
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
-
 
 @keyframes slide {
     0% {
@@ -68,11 +126,6 @@ body, html {
     }
 }
 
-.images {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .images img {
     width: 25%; /* Pour diviser l'espace en 4 colonnes */
     box-sizing: border-box; /* Inclure la bordure et le padding dans la largeur */
@@ -83,7 +136,10 @@ body, html {
     display: flex;
     flex-wrap: wrap;
     max-width: 800px; /* ajustez selon vos besoins */
+    display: flex;
+    flex-wrap: wrap;
 }
+
 
 .images a {
     position: relative;
@@ -121,7 +177,3 @@ body, html {
     transition: filter 0.3s;
 }
 
-.panier-icon {
-    font-size: 24px;
-    color:pink;
-}

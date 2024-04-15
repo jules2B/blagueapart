@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     padding: 0;
@@ -31,7 +32,7 @@ main {
     justify-content: center;
     height: 100vh;
     align-items: flex-start; /* Aligner les éléments au début de la page */
-    padding-top: 20px; /* Ajouter un espace en haut de la page */
+    padding-top: 10px; /* Ajouter un espace en haut de la page */
     min-height: 100vh; /* Empêcher les annonces de toucher le bas de la page */
 }
 
